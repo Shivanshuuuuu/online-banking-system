@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+
+<body onload="loadProfile()">
+
+    <div class="container">
+
+        <h2>User Profile</h2>
+
+        <div class="profile-box">
+            <p><strong>Name:</strong> <span id="displayName"></span></p>
+            <p><strong>Username:</strong> <span id="displayUsername"></span></p>
+            <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+        </div>
+
+        <h3>Edit Details</h3>
+
+        <input type="text" id="name" placeholder="Update Name">
+        <input type="email" id="email" placeholder="Add / Update Email">
+        <input type="password" id="password" placeholder="New Password">
+
+        <button onclick="updateProfile()">Update Profile</button>
+
+        <br><br>
+        <a href="dashboard.html" class="menu-item">Back</a>
+
+    </div>
+
+</body>
+
+</html>
